@@ -5,7 +5,7 @@
 
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 &mt {
     flavor = "balanced";
