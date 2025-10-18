@@ -91,8 +91,8 @@
         default_layer {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R                        &kp T                                       &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &kp ESCAPE      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &lt 6 B      &kp SQT         &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &kp ESCAPE      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &lt 6 B      &kp SQT         &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL INT_HENKAN  &lt 3 SPACE  &kp TAB         &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
             >;
 
@@ -119,10 +119,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans    &kp RC(RS(TAB))         &kp UP_ARROW    &kp RC(TAB)              &kp ESCAPE
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp LG(TAB)     &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans    &kp RS(RG(LEFT_ARROW))  &kp RG(TAB)     &kp RS(RG(RIGHT_ARROW))  &kp RIGHT_SHIFT
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                                     &trans
             >;
         };
 
